@@ -4,12 +4,6 @@ Welcome to the **Skyneticlabs Validator Portal** — a central hub for informati
 
 ---
 
-## Project Goal
-
-Our mission is to enhance the reliability, security, and transparency of blockchain validator infrastructure, ensuring stable performance and open access to data for communities and developers.
-
----
-
 ## Networks We Support
 
 <p align="center">
@@ -40,7 +34,6 @@ Our mission is to enhance the reliability, security, and transparency of blockch
 ###  Documentation
 - Comprehensive **setup guides**, **upgrade instructions**, and **automation scripts**.  
 - Security-first validator design: **sentry topology**, **Horcrux Distributed Signer**, and **automated failover**.  
-- Best practices for validator operation and infrastructure management.
 
 ###  Community & Contribution
 We actively contribute to the growth and decentralization of Web3 by:
