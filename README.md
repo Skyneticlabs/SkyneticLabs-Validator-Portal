@@ -17,7 +17,7 @@ Welcome to the **Skyneticlabs Validator Portal** — a central hub for informati
 </p>
 
 <p align="center">
-  <sub>Active participation across multiple Web3 ecosystems</sub>
+  <sub>Click a network to explore endpoints, snapshots, and documentation.</sub>
 </p>
 
 ---
