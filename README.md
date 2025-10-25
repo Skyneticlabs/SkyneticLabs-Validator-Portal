@@ -7,13 +7,27 @@ Welcome to the **Skyneticlabs Validator Portal** — a central hub for informati
 ## Networks We Support
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/celestia-logo.png" width="24"> Celestia &nbsp; | &nbsp;
-  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/gitopia-logo.png" width="24"> Gitopia &nbsp; | &nbsp;
-  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/arkeo-logo.png" width="24"> Arkeo &nbsp; | &nbsp;
-  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/kyve.png" width="24"> Kyve &nbsp; | &nbsp;
-  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/aura.png" width="24"> Aura &nbsp; | &nbsp;
-  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/lava.png" width="24"> Lava &nbsp; | &nbsp;
-  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/starknet.png" width="24"> Starknet
+  <a href="Celestia.md">
+    <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/celestia-logo.png" width="24"> Celestia
+  </a> &nbsp; | &nbsp;
+  <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/gitopia" target="_blank">
+    <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/gitopia-logo.png" width="24"> Gitopia
+  </a> &nbsp; | &nbsp;
+  <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/arkeo" target="_blank">
+    <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/arkeo-logo.png" width="24"> Arkeo
+  </a> &nbsp; | &nbsp;
+  <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/kyve" target="_blank">
+    <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/kyve.png" width="24"> Kyve
+  </a> &nbsp; | &nbsp;
+  <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/aura" target="_blank">
+    <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/aura.png" width="24"> Aura
+  </a> &nbsp; | &nbsp;
+  <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/lava" target="_blank">
+    <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/lava.png" width="24"> Lava
+  </a> &nbsp; | &nbsp;
+  <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/starknet" target="_blank">
+    <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/starknet.png" width="24"> Starknet
+  </a>
 </p>
 
 <p align="center">
