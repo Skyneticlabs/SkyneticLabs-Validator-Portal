@@ -1,1 +1,53 @@
-# SkyneticLabs-Validator-Portal
+# Skyneticlabs-Validator-Portal
+
+Welcome to the **Skyneticlabs Validator Portal** — a central hub for information, tools, and documentation related to Skynetic Labs’ validator operations across multiple Web3 and blockchain networks.
+
+---
+
+## Project Goal
+
+Our mission is to enhance the reliability, security, and transparency of blockchain validator infrastructure, ensuring stable performance and open access to data for communities and developers.
+
+---
+
+## Networks We Support
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/celestia-logo.png" width="24"> Celestia &nbsp; | &nbsp;
+  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/gitopia-logo.png" width="24"> Gitopia &nbsp; | &nbsp;
+  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/arkeo-logo.png" width="24"> Arkeo &nbsp; | &nbsp;
+  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/kyve.png" width="24"> Kyve &nbsp; | &nbsp;
+  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/aura.png" width="24"> Aura &nbsp; | &nbsp;
+  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/lava.png" width="24"> Lava &nbsp; | &nbsp;
+  <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/starknet.png" width="24"> Starknet
+</p>
+
+<p align="center">
+  <sub>Active participation across multiple Web3 ecosystems</sub>
+</p>
+
+---
+
+##  What We Provide
+
+**SkyneticLabs Validator Portal** offers a collection of resources and tools designed to support node operators, developers, and the broader blockchain community.
+
+###  Infrastructure Services
+- **Public Endpoints** — Reliable RPC, API, and gRPC endpoints for various networks.  
+- **Snapshots & State Syncs** — Frequently updated snapshots and state sync data for fast node recovery.  
+- **Monitoring Tools** — Validator dashboards and metrics for uptime and performance tracking.
+
+###  Documentation
+- Comprehensive **setup guides**, **upgrade instructions**, and **automation scripts**.  
+- Security-first validator design: **sentry topology**, **Horcrux Distributed Signer**, and **automated failover**.  
+- Best practices for validator operation and infrastructure management.
+
+###  Community & Contribution
+We actively contribute to the growth and decentralization of Web3 by:
+- Maintaining reliable validator infrastructure across multiple chains.  
+- Sharing tools and scripts to support network health and resilience.  
+- Participating in testnets, mainnets, and governance initiatives.
+
+<p align="center">
+  <sub>Empowering Web3 reliability, transparency, and open participation.</sub>
+</p>
