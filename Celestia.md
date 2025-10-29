@@ -9,18 +9,18 @@ Welcome to the **Celestia Validator Portal** — your access point for SkyneticL
   <details>
     <summary> ⚫ Mainnet Endpoints</summary>
     <ul>
-      <li><strong>RPC:</strong> <a href="https://rpc.mainnet.celestia.net" target="_blank">rpc.mainnet.celestia.net</a></li>
-      <li><strong>API:</strong> <a href="https://api.mainnet.celestia.net" target="_blank">api.mainnet.celestia.net</a></li>
-      <li><strong>gRPC:</strong> <a href="https://grpc.mainnet.celestia.net" target="_blank">grpc.mainnet.celestia.net</a></li>
+      <li><strong>RPC:</strong> <a href="https://celestia-m-rpc.skyneticlabs.com" target="_blank">https://celestia-m-rpc.skyneticlabs.com/</a></li>
+      <li><strong>API:</strong> <a href="https://celestia-m-api.skyneticlabs.com" target="_blank">https://celestia-m-api.skyneticlabs.com</a></li>
+      <li><strong>gRPC:</strong> <a href="celestia-m-grpc.skyneticlabs.com:443" target="_blank">celestia-m-grpc.skyneticlabs.com:443</a></li>
     </ul>
   </details>
 
   <details>
     <summary> ⚪ Testnet Endpoints</summary>
     <ul>
-      <li><strong>RPC:</strong> <a href="https://rpc.testnet.celestia.net" target="_blank">rpc.testnet.celestia.net</a></li>
-      <li><strong>API:</strong> <a href="https://api.testnet.celestia.net" target="_blank">api.testnet.celestia.net</a></li>
-      <li><strong>gRPC:</strong> <a href="https://grpc.testnet.celestia.net" target="_blank">grpc.testnet.celestia.net</a></li>
+      <li><strong>RPC:</strong> <a href="https://celestia-t-rpc.skyneticlabs.com" target="_blank">https://celestia-t-rpc.skyneticlabs.com/</a></li>
+      <li><strong>API:</strong> <a href="https://celestia-t-api.skyneticlabs.com" target="_blank">https://celestia-t-api.skyneticlabs.com</a></li>
+      <li><strong>gRPC:</strong> <a href="celestia-t-grpc.skyneticlabs.com:443" target="_blank">celestia-t-grpc.skyneticlabs.com:443</a></li>
     </ul>
   </details>
 </section>
