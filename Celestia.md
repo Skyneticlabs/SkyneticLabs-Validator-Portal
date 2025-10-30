@@ -33,7 +33,7 @@ Access Celestia **Mainnet** and **Testnet** snapshot resources and installation 
 ### 🌐 Snapshot directories
 You can explore snapshot directories here:
 - **Mainnet:** [https://services-m.skyneticlabs.com/celestia](https://services-m.skyneticlabs.com/celestia)  
-- **Testnet:** [https://services-t.skyneticlabs.com/celestia](https://services-t.skyneticlabs.com/celestia)
+- **Testnet:** [https://services-t.skyneticlabs.com/celestia/](https://services-t.skyneticlabs.com/celestia/)
 
 Each directory contains:
 - `addrbook.json` and `genesis.json` — configuration files  
@@ -64,7 +64,7 @@ sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f
 <summary>⚪ Testnet Snapshot — install guide</summary>
 
 Use the following commands to restore **Celestia Testnet** snapshot:  
-📁 [View directory](https://services-t.skyneticlabs.com/celestia)  
+📁 [View directory](https://services-t.skyneticlabs.com/celestia/)  
 📦 [Download snapshot](https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4)
 
 ```bash
