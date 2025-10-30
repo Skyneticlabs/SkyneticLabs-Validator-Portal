@@ -37,7 +37,7 @@ You can explore snapshot directories here:
 
 Each directory contains:
 - `addrbook.json` and `genesis.json` — configuration files  
-- Snapshot archives (with pruning)  
+- Snapshot with pruning  
 - Metadata files with snapshot creation date and block height
 
 ---
