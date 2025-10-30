@@ -4,7 +4,7 @@ Welcome to the **Celestia Validator Portal** — your access point for SkyneticL
 
 ---
 
-## 🌐 Endpoint
+##   Endpoint
 
 Access public RPC, API, and gRPC endpoints for Celestia Mainnet and Testnet.
 
@@ -26,11 +26,11 @@ Access public RPC, API, and gRPC endpoints for Celestia Mainnet and Testnet.
 
 ---
 
-## 📦 Snapshots
+##   Snapshots
 
 Access Celestia **Mainnet** and **Testnet** snapshot resources and installation guides.
 
-### 🌐 Snapshot directories
+###   Snapshot directories
 You can explore snapshot directories here:
 - **Mainnet:** [https://services-m.skyneticlabs.com/celestia/](https://services-m.skyneticlabs.com/celestia/)  
 - **Testnet:** [https://services-t.skyneticlabs.com/celestia/](https://services-t.skyneticlabs.com/celestia/)
@@ -87,7 +87,10 @@ sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f
 
 - Reliable and secure validator infrastructure  
 - Publicly accessible endpoints and tools  
-- Guides, scripts, and best practices for the community  
+- Guides, scripts, and best practices for the community
+
+📘 You can find all **Celestia-related services**, as well as **security** and **monitoring guides**, in the main documentation:  
+👉 [https://skyneticlabs.gitbook.io/docs/](https://skyneticlabs.gitbook.io/docs/)  
 
 ---
 
