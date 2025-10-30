@@ -39,7 +39,7 @@ cp $HOME/.celestia-app/data/priv_validator_state.json $HOME/.celestia-app/priv_v
 
 rm -rf $HOME/.celestia-app/data
 
-curl -L https://services-m.skyneticlabs.com/celestia/snapshot_mainnet.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.celestia-app/
+curl -L https://services-m.skyneticlabs.com/celestia/celestia-snap-m.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.celestia-app/
 
 mv $HOME/.celestia-app/priv_validator_state.json.backup $HOME/.celestia-app/data/priv_validator_state.json
 
@@ -57,7 +57,7 @@ cp $HOME/.celestia-app/data/priv_validator_state.json $HOME/.celestia-app/priv_v
 
 rm -rf $HOME/.celestia-app/data
 
-curl -L https://services-t.skyneticlabs.com/celestia/snapshot_testnet.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.celestia-app/
+curl -L https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.celestia-app/
 
 mv $HOME/.celestia-app/priv_validator_state.json.backup $HOME/.celestia-app/data/priv_validator_state.json
 
