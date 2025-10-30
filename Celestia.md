@@ -2,69 +2,72 @@
 
 Welcome to the **Celestia Validator Portal** — your access point for SkyneticLabs’ public infrastructure, snapshots, and tools supporting the Celestia ecosystem.
 
-<section class="endpoint-section">
-  <h2> Endpoint</h2>
-  <p>Access public RPC, API, and gRPC endpoints for Celestia Mainnet and Testnet.</p>
+---
 
-  <details>
-    <summary> ⚫ Mainnet Endpoints</summary>
-    <ul>
-      <li><strong>RPC:</strong> <a href="https://celestia-m-rpc.skyneticlabs.com" target="_blank">https://celestia-m-rpc.skyneticlabs.com/</a></li>
-      <li><strong>API:</strong> <a href="https://celestia-m-api.skyneticlabs.com" target="_blank">https://celestia-m-api.skyneticlabs.com</a></li>
-      <li><strong>gRPC:</strong> <a href="celestia-m-grpc.skyneticlabs.com:443" target="_blank">celestia-m-grpc.skyneticlabs.com:443</a></li>
-    </ul>
-  </details>
+## 🌐 Endpoint
 
-  <details>
-    <summary> ⚪ Testnet Endpoints</summary>
-    <ul>
-      <li><strong>RPC:</strong> <a href="https://celestia-t-rpc.skyneticlabs.com" target="_blank">https://celestia-t-rpc.skyneticlabs.com/</a></li>
-      <li><strong>API:</strong> <a href="https://celestia-t-api.skyneticlabs.com" target="_blank">https://celestia-t-api.skyneticlabs.com</a></li>
-      <li><strong>gRPC:</strong> <a href="celestia-t-grpc.skyneticlabs.com:443" target="_blank">celestia-t-grpc.skyneticlabs.com:443</a></li>
-    </ul>
-  </details>
-</section>
+Access public RPC, API, and gRPC endpoints for Celestia Mainnet and Testnet.
 
-<section class="snapshot-section">
-  <h2>Snapshots</h2>
-  <p>Download and restore ready-to-use snapshots to quickly sync your Celestia Mainnet or Testnet node.</p>
+<details>
+  <summary>⚫ Mainnet Endpoints</summary>
 
-  <details>
-    <summary>⚫ Mainnet Snapshot</summary>
-    <p>Use the following commands to download and restore the latest snapshot for Celestia Mainnet:</p>
-    <pre><code>cd $HOME
+- **RPC:** [https://celestia-m-rpc.skyneticlabs.com](https://celestia-m-rpc.skyneticlabs.com)  
+- **API:** [https://celestia-m-api.skyneticlabs.com](https://celestia-m-api.skyneticlabs.com)  
+- **gRPC:** `celestia-m-grpc.skyneticlabs.com:443`
+</details>
+
+<details>
+  <summary>⚪ Testnet Endpoints</summary>
+
+- **RPC:** [https://celestia-t-rpc.skyneticlabs.com](https://celestia-t-rpc.skyneticlabs.com)  
+- **API:** [https://celestia-t-api.skyneticlabs.com](https://celestia-t-api.skyneticlabs.com)  
+- **gRPC:** `celestia-t-grpc.skyneticlabs.com:443`
+</details>
+
+---
+
+## 📦 Snapshots
+
+Download and restore ready-to-use snapshots to quickly sync your Celestia nodes.
+
+### 🔗 Direct Links
+- **Mainnet:** [https://services-m.skyneticlabs.com/celestia/celestia-snap-m.tar.lz4](https://services-m.skyneticlabs.com/celestia/celestia-snap-m.tar.lz4)  
+- **Testnet:** [https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4](https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4)
+
+---
+
+<details>
+<summary>⚫ Mainnet Snapshot — install guide</summary>
+
+Use the following commands to restore **Celestia Mainnet** snapshot:
+  
+```bash
+cd $HOME
 sudo systemctl stop celestia-appd
-
 cp $HOME/.celestia-app/data/priv_validator_state.json $HOME/.celestia-app/priv_validator_state.json.backup
-
 rm -rf $HOME/.celestia-app/data
-
 curl -L https://services-m.skyneticlabs.com/celestia/celestia-snap-m.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.celestia-app/
-
 mv $HOME/.celestia-app/priv_validator_state.json.backup $HOME/.celestia-app/data/priv_validator_state.json
-
 sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f
-</code></pre>
-  </details>
+```
+</details>
 
-  <details>
-    <summary>⚪ Testnet Snapshot</summary>
-    <p>Use the following commands to download and restore the latest snapshot for Celestia Testnet:</p>
-    <pre><code>cd $HOME
+<details>
+<summary>⚪ Testnet Snapshot — install guide</summary>
+
+Use the following commands to restore **Celestia Testnet** snapshot:
+  
+```bash
+cd $HOME
 sudo systemctl stop celestia-appd
-
 cp $HOME/.celestia-app/data/priv_validator_state.json $HOME/.celestia-app/priv_validator_state.json.backup
-
 rm -rf $HOME/.celestia-app/data
-
 curl -L https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.celestia-app/
-
 mv $HOME/.celestia-app/priv_validator_state.json.backup $HOME/.celestia-app/data/priv_validator_state.json
-
 sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f
-</code></pre>
-  </details>
-</section>
+```
+</details>
+
 
 ---
 
