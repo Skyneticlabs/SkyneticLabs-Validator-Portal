@@ -28,19 +28,27 @@ Access public RPC, API, and gRPC endpoints for Celestia Mainnet and Testnet.
 
 ## 📦 Snapshots
 
-Download and restore ready-to-use snapshots to quickly sync your Celestia nodes.
+Access Celestia **Mainnet** and **Testnet** snapshot resources and installation guides.
 
-### 🔗 Direct Links
-- **Mainnet:** [https://services-m.skyneticlabs.com/celestia/celestia-snap-m.tar.lz4](https://services-m.skyneticlabs.com/celestia/celestia-snap-m.tar.lz4)  
-- **Testnet:** [https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4](https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4)
+### 🌐 Snapshot directories
+You can explore snapshot directories here:
+- **Mainnet:** [https://services-m.skyneticlabs.com/celestia](https://services-m.skyneticlabs.com/celestia)  
+- **Testnet:** [https://services-t.skyneticlabs.com/celestia](https://services-t.skyneticlabs.com/celestia)
+
+Each directory contains:
+- `addrbook.json` and `genesis.json` — configuration files  
+- Snapshot archives (with pruning)  
+- Metadata files with snapshot creation date and block height
 
 ---
 
 <details>
 <summary>⚫ Mainnet Snapshot — install guide</summary>
 
-Use the following commands to restore **Celestia Mainnet** snapshot:
-  
+Use the following commands to restore **Celestia Mainnet** snapshot:  
+📁 [View directory](https://services-m.skyneticlabs.com/celestia)  
+📦 [Download snapshot](https://services-m.skyneticlabs.com/celestia/celestia-snap-m.tar.lz4)
+
 ```bash
 cd $HOME
 sudo systemctl stop celestia-appd
@@ -55,8 +63,10 @@ sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f
 <details>
 <summary>⚪ Testnet Snapshot — install guide</summary>
 
-Use the following commands to restore **Celestia Testnet** snapshot:
-  
+Use the following commands to restore **Celestia Testnet** snapshot:  
+📁 [View directory](https://services-t.skyneticlabs.com/celestia)  
+📦 [Download snapshot](https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4)
+
 ```bash
 cd $HOME
 sudo systemctl stop celestia-appd
