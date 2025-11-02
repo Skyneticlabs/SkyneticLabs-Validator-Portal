@@ -55,6 +55,18 @@ We actively contribute to the growth and decentralization of Web3 by:
 - Sharing tools and scripts to support network health and resilience.  
 - Participating in testnets, mainnets, and governance initiatives.
 
+---
+
+<p align="center">
+  <a href="https://skyneticlabs.gitbook.io/docs/" target="_blank">
+    <img src="https://img.shields.io/badge/OPEN-DOCUMENTATION-blue?style=for-the-badge">
+  </a>
+</p>
+
+---
+
 <p align="center">
   <sub>Empowering Web3 reliability, transparency, and open participation.</sub>
 </p>
+
+
