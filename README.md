@@ -1,4 +1,4 @@
-# Skyneticlabs-Validator-Portal
+# 🔸 Skyneticlabs-Validator-Portal
 
 Welcome to the **Skyneticlabs Validator Portal** — a central hub for information, tools, and documentation related to Skynetic Labs’ validator operations across multiple Web3 and blockchain networks.
 
@@ -59,14 +59,11 @@ We actively contribute to the growth and decentralization of Web3 by:
 
 <p align="center">
   <a href="https://skyneticlabs.gitbook.io/docs/" target="_blank">
-    <img src="https://img.shields.io/badge/OPEN-DOCUMENTATION-blue?style=for-the-badge">
+    <img src="https://img.shields.io/badge/OPEN-DOCUMENTATION-orange?style=for-the-badge&logo=readme&logoColor=white">
   </a>
 </p>
-
----
 
 <p align="center">
   <sub>Empowering Web3 reliability, transparency, and open participation.</sub>
 </p>
-
 
