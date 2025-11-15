@@ -81,6 +81,22 @@ sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f
 
 ---
 
+## Security Best Practices
+
+To ensure a secure and resilient Celestia validator environment, we recommend following these guidelines:
+
+- **Enable a firewall** (`ufw` or `firewalld`) and restrict access to essential ports only  
+- **Disable public RPC** unless explicitly required for your setup  
+- **Use a dedicated server for TMKMS** or any external signing solution  
+- **Never run the validator and signer on the same machine**  
+- **Enable monitoring and alerts** (Grafana, Loki, Prometheus, Telegram, etc.) to detect issues early  
+- **Keep your system and packages up to date** with regular security patches  
+- **Secure SSH access** using keys instead of passwords and restrict root login  
+- **Implement regular backups** of configuration files and validator keys (securely stored offline)  
+- **Protect against DDoS attacks** using rate-limiting or upstream filtering when possible
+
+---
+
 ##  About SkyneticLabs
 
 **SkyneticLabs** contributes to the Celestia ecosystem by maintaining:
