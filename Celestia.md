@@ -29,6 +29,7 @@ Access public RPC, API, and gRPC endpoints for Celestia Mainnet and Testnet.
 ##   Snapshots
 
 Access Celestia **Mainnet** and **Testnet** snapshot resources and installation guides.
+Celestia Mainnet and Testnet snapshots are **updated every 8 hours** to ensure fast and reliable node synchronization.
 
 ###   Snapshot directories
 You can explore snapshot directories here:
