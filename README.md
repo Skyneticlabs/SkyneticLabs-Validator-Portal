@@ -13,9 +13,6 @@ Welcome to the **Skyneticlabs Validator Portal** — a central hub for informati
   <a href="Story.md">
     <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/story.png" width="24"> Story
   </a> &nbsp; | &nbsp;
-  <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/story" target="_blank">
-    <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/story.png" width="24"> Story  
-  </a> &nbsp; | &nbsp;
   <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/publish-your-docs" target="_blank">
     <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/gitopia-logo.png" width="24"> Gitopia
   </a> &nbsp; | &nbsp;
