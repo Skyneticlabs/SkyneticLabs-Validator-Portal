@@ -15,7 +15,10 @@ Welcome to the **Skyneticlabs Validator Portal** — a central hub for informati
   </a> &nbsp; | &nbsp;
   <a href="Monad.md">
     <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/monad.png" width="24"> Monad
-  </a> &nbsp; | &nbsp;
+  </a>
+</p>
+
+<p align="center">
   <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/publish-your-docs" target="_blank">
     <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/gitopia-logo.png" width="24"> Gitopia
   </a> &nbsp; | &nbsp;
@@ -24,7 +27,10 @@ Welcome to the **Skyneticlabs Validator Portal** — a central hub for informati
   </a> &nbsp; | &nbsp;
   <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/kyve" target="_blank">
     <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/kyve.png" width="24"> Kyve
-  </a> &nbsp; | &nbsp;
+  </a>
+</p>
+
+<p align="center">
   <a href="https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/aura" target="_blank">
     <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/aura.png" width="24"> Aura
   </a> &nbsp; | &nbsp;
@@ -35,6 +41,7 @@ Welcome to the **Skyneticlabs Validator Portal** — a central hub for informati
     <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/starknet.png" width="24"> Starknet
   </a>
 </p>
+
 
 <p align="center">
   <sub>Click a network to explore endpoints, snapshots, and documentation.</sub>
