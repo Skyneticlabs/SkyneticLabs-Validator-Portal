@@ -3,9 +3,6 @@
 Welcome to the **Monad Validator Portal** — a curated entry point for  
 **SkyneticLabs validator knowledge, operational notes, and practical guidance**.
 
-This repository serves as a **living runbook** for operating a Monad validator  
-in real-world conditions across **testnet and mainnet** environments.
-
 It is designed to evolve alongside the network and the validator experience.
 
 ---
@@ -22,60 +19,23 @@ and recommended operational workflows for validators.
 
 ---
 
-## Validator Lifecycle Coverage
+## Repository Contents
 
-This runbook is structured around the **actual lifecycle of a validator** —
-from first readiness checks to long-term operation.
+This repository collects a small set of materials used during
+day-to-day validator operation:
 
-### 1. Environment Readiness
+- **Operational notes**  
+  Short documents capturing nuances that do not fit cleanly
+  into formal documentation.
 
-Key considerations before interacting with keys or chain state:
+- **Decision checklists**  
+  Brief prompts used before high-impact actions
+  such as restarts or network transitions.
 
-- hardware expectations and common pitfalls
-- kernel and firmware nuances
-- disk layout and TrieDB constraints
-- time synchronization, networking, and entropy
+- **Helper scripts (optional)**  
+  Small local helpers for validating basic assumptions
+  before making changes.
 
----
-
-### 2. Pre-Consensus Sanity
-
-Checks and observations before joining or rejoining consensus:
-
-- keystore presence and permissions
-- service ordering and dependency behavior
-- ports, peers, and gossip visibility
-- subtle states where the node appears healthy but is not
-
----
-
-### 3. Validator Actions
-
-Operational guidance for **high-impact actions**, including:
-
-- validator registration
-- configuration adjustments
-- restarts and rolling updates
-- testnet → mainnet transitions
-
-Each action is approached through:
-- prerequisites
-- runtime observations
-- post-action verification
-
----
-
-### 4. Failure & Recovery Patterns
-
-A growing collection of real-world failure scenarios and recovery notes, such as:
-
-- silent or partial sync stalls
-- early indicators of TrieDB degradation
-- late discovery of keystore inconsistencies
-- services running without effective consensus participation
-- edge cases observed after upgrades
-
-The emphasis is on **early recognition** and **informed response**.
 
 ---
 
