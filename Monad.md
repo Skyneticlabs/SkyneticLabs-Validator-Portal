@@ -1,47 +1,96 @@
 # <img src="https://raw.githubusercontent.com/astrosynx/Logo/main/monad.png" width="30" align="center"> &nbsp; Monad Validator Portal
 
-Welcome to the **Monad Validator Portal** — your access point for **SkyneticLabs validator guides and tooling tips**.  
+Welcome to the **Monad Validator Portal** — a curated entry point for  
+**SkyneticLabs validator knowledge, operational notes, and practical guidance**.
 
-This portal provides **documentation, pre-flight checks, monitoring recommendations, and automation examples** for running a reliable Monad node.
+This repository serves as a **living runbook** for operating a Monad validator  
+in real-world conditions across **testnet and mainnet** environments.
+
+It is designed to evolve alongside the network and the validator experience.
 
 ---
 
 ## 📚 Documentation & Learning
 
-Explore SkyneticLabs guides for Monad:
+Explore SkyneticLabs resources for Monad:
 
 - **Mainnet Docs:** [View Mainnet Guide](https://skyneticlabs.gitbook.io/docs/services/mainnet-networks/monad)  
 - **Testnet Docs:** [View Testnet Guide](https://skyneticlabs.gitbook.io/docs/services/testnet-networks/monad)  
 
-Includes setup instructions, configuration tips, and recommended workflows for validators.
+These guides cover setup considerations, configuration details,
+and recommended operational workflows for validators.
 
 ---
 
-## 🧪 Pre-flight Checks & Tips
+## Validator Lifecycle Coverage
 
-- Verify system dependencies and resource availability before starting the node  
-- Ensure systemd services and network ports are configured correctly  
-- Validate server environment: disk space, memory, CPU limits  
-- Confirm correct network and chain parameters  
+This runbook is structured around the **actual lifecycle of a validator** —
+from first readiness checks to long-term operation.
 
-These checks help prevent issues before they affect consensus or RPC.
+### 1. Environment Readiness
 
----
+Key considerations before interacting with keys or chain state:
 
-## 📊 Monitoring & Observability
-
-- Track node uptime, service status, and connectivity  
-- Collect metrics for alerting and performance analysis  
-- Use local logs to detect early anomalies and bottlenecks  
+- hardware expectations and common pitfalls
+- kernel and firmware nuances
+- disk layout and TrieDB constraints
+- time synchronization, networking, and entropy
 
 ---
 
-## ⚙️ Automation Examples
+### 2. Pre-Consensus Sanity
 
-Integrate checks into automated workflows:
+Checks and observations before joining or rejoining consensus:
 
-```bash
-# Example cron for periodic environment check
-*/5 * * * * /opt/monad-validator/preflight-checks.sh >> /var/log/monad-preflight.log 2>&1
-```
-Use CI/CD pipelines to verify configuration before updates or deployments.
+- keystore presence and permissions
+- service ordering and dependency behavior
+- ports, peers, and gossip visibility
+- subtle states where the node appears healthy but is not
+
+---
+
+### 3. Validator Actions
+
+Operational guidance for **high-impact actions**, including:
+
+- validator registration
+- configuration adjustments
+- restarts and rolling updates
+- testnet → mainnet transitions
+
+Each action is approached through:
+- prerequisites
+- runtime observations
+- post-action verification
+
+---
+
+### 4. Failure & Recovery Patterns
+
+A growing collection of real-world failure scenarios and recovery notes, such as:
+
+- silent or partial sync stalls
+- early indicators of TrieDB degradation
+- late discovery of keystore inconsistencies
+- services running without effective consensus participation
+- edge cases observed after upgrades
+
+The emphasis is on **early recognition** and **informed response**.
+
+---
+
+## Relationship to Official Monad Documentation
+
+Official Monad documentation focuses on **supported workflows and component behavior**.
+
+This portal complements it by capturing **operational context**,  
+practical considerations, and lessons learned from running validators over time.
+
+📘 Official documentation: https://docs.monad.xyz/
+
+---
+
+<p align="center">
+  <i>Maintained by SkyneticLabs — validator operations & reliability</i>
+</p>
+
