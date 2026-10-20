@@ -1,84 +1,68 @@
 # <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/celestia-logo.png" width="30" align="center"> &nbsp; Celestia Network
 
-Welcome to the **Celestia Validator Portal** — your access point for SkyneticLabs’ public infrastructure, snapshots, and tools supporting the Celestia ecosystem.
+Welcome to the **Celestia Validator Portal** — your access point for SkyneticLabs' validator, analytics and open data for the Celestia ecosystem.  
+Celestia is our **home network**: it's where we built our first public dashboard and API.
 
 ---
 
-##   Endpoint
+## Our Validator
 
-Access public RPC, API, and gRPC endpoints for Celestia Mainnet and Testnet.
-
-<details>
-  <summary>⚫ Mainnet Endpoints</summary>
-
-- **RPC:** [https://celestia-m-rpc.skyneticlabs.com](https://celestia-m-rpc.skyneticlabs.com)  
-- **API:** [https://celestia-m-api.skyneticlabs.com](https://celestia-m-api.skyneticlabs.com)  
-- **gRPC:** `celestia-m-grpc.skyneticlabs.com:443`
-</details>
-
-<details>
-  <summary>⚪ Testnet Endpoints</summary>
-
-- **RPC:** [https://celestia-t-rpc.skyneticlabs.com](https://celestia-t-rpc.skyneticlabs.com)  
-- **API:** [https://celestia-t-api.skyneticlabs.com](https://celestia-t-api.skyneticlabs.com)  
-- **gRPC:** `celestia-t-grpc.skyneticlabs.com:443`
-</details>
+| | |
+|---|---|
+| **Network** | Celestia Testnet (Mocha) |
+| **Operator address** | `celestiavaloper1uqnlzylk0uld4azf2n0awclxxtllmr7d0xrj3m` |
+| **Explorer** | [View validator ↗](https://celestia-dashboard.krews.xyz/celestia-mocha/validators/celestiavaloper1uqnlzylk0uld4azf2n0awclxxtllmr7d0xrj3m) |
+| **Hardware** | Own bare metal in Buenos Aires · remote signer + sentry nodes |
 
 ---
 
-##   Snapshots
+## Celestia Economic Dashboard
 
-Access Celestia **Mainnet** and **Testnet** snapshot resources and installation guides.  
-Snapshots are **updated every 8 hours** to ensure fast and reliable node synchronization.
+🟣 **[skyneticlabs.com/celestia](https://skyneticlabs.com/celestia)** — a lightweight analytics product for monitoring network load, transaction economics and fee efficiency.
 
-###   Snapshot directories
-You can explore snapshot directories here:
-- **Mainnet:** [https://services-m.skyneticlabs.com/celestia/](https://services-m.skyneticlabs.com/celestia/)  
-- **Testnet:** [https://services-t.skyneticlabs.com/celestia/](https://services-t.skyneticlabs.com/celestia/)
+- **Staking & yield** — total supply, annual provisions, bonded ratio, inflation rate and estimated staking APR
+- **Inflation ladder** — from 8% at genesis through CIP-29 and CIP-41 to the 1.5% floor, with a 10-year supply projection
+- **Who pays for security** — user fees vs. newly minted TIA, and fee coverage of the security budget
+- **Data costs** — flat per-MB pricing compared with Ethereum blobs and calldata
+- **Security & distribution** — top 5 / 10 / 25 stake share, median self-bond, unclaimed rewards
+- **Trends & correlations** — staking ratio, supply growth, block load, active validators
+- **bot.fun** — the AI-agent economy on Eden, an EVM rollup that pays gas in TIA
 
-Each directory contains:
-- `addrbook.json` and `genesis.json` — configuration files  
-- Snapshot with pruning  
-- Metadata files with snapshot creation date and block height
+🔎 **[Validator & Fund Lookup](https://skyneticlabs.com/celestia/lookup/)** — Foundation Delegation Program seats, seat-holder uptime, jailed validators and archived cohorts.
 
 ---
 
-<details>
-<summary>⚫ Mainnet Snapshot — install guide</summary>
+## Public API
 
-Use the following commands to restore **Celestia Mainnet** snapshot:  
-📁 [View directory](https://services-m.skyneticlabs.com/celestia/)  
-📦 [Download snapshot](https://services-m.skyneticlabs.com/celestia/celestia-snap-m.tar.lz4)
+The data behind the dashboard is available as an open JSON API.  
+**GET only · no auth · open CORS · 30s cache.**
+
+**Base URL:** `https://skyneticlabs.com/celestia/api/v1/`
+
+| Endpoint | Returns |
+|---|---|
+| `/network` | Chain state, block load, mempool |
+| `/economics/supply` | Supply, provisions, community pool, inflation |
+| `/economics/staking` | Bonded ratio, validator counts, top-N share |
+| `/economics/fees` | Average and median fees, 24h fee series |
+| `/economics/da-cost?mb=24000` | Data-availability cost calculator |
+| `/economics/da-usage` | PayForBlobs share and blob bytes |
+| `/validators?status=bonded&limit=10` | Filterable, sortable validator list |
+| `/validators/<moniker-or-valoper>` | Single validator profile |
+| `/namespaces/<namespace_id>` | DA footprint of a rollup or appchain |
+| `/insights` | 24h and 7d changes in plain English |
+| `/series/<key>?limit=200` | Historical time series |
+| `/meta/status` | Collector health and available series keys |
 
 ```bash
-cd $HOME
-sudo systemctl stop celestia-appd
-cp $HOME/.celestia-app/data/priv_validator_state.json $HOME/.celestia-app/priv_validator_state.json.backup
-rm -rf $HOME/.celestia-app/data
-curl -L https://services-m.skyneticlabs.com/celestia/celestia-snap-m.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.celestia-app/
-mv $HOME/.celestia-app/priv_validator_state.json.backup $HOME/.celestia-app/data/priv_validator_state.json
-sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f
+# What changed on Celestia in the last 24h / 7d
+curl https://skyneticlabs.com/celestia/api/v1/insights
+
+# How much would it cost to publish 24 GB of data?
+curl "https://skyneticlabs.com/celestia/api/v1/economics/da-cost?mb=24000"
 ```
-</details>
 
-<details>
-<summary>⚪ Testnet Snapshot — install guide</summary>
-
-Use the following commands to restore **Celestia Testnet** snapshot:  
-📁 [View directory](https://services-t.skyneticlabs.com/celestia/)  
-📦 [Download snapshot](https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4)
-
-```bash
-cd $HOME
-sudo systemctl stop celestia-appd
-cp $HOME/.celestia-app/data/priv_validator_state.json $HOME/.celestia-app/priv_validator_state.json.backup
-rm -rf $HOME/.celestia-app/data
-curl -L https://services-t.skyneticlabs.com/celestia/celestia-snap-t.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.celestia-app/
-mv $HOME/.celestia-app/priv_validator_state.json.backup $HOME/.celestia-app/data/priv_validator_state.json
-sudo systemctl restart celestia-appd && sudo journalctl -u celestia-appd -f
-```
-</details>
-
+🚧 **skynetic-da** — an open-source, local-first Python SDK for tracking namespace DA costs over time. *Coming soon.*
 
 ---
 
@@ -103,10 +87,10 @@ To ensure a secure and resilient Celestia validator environment, we recommend fo
 **SkyneticLabs** contributes to the Celestia ecosystem by maintaining:
 
 - Reliable and secure validator infrastructure  
-- Publicly accessible endpoints and tools  
+- Open dashboards and a public API for Celestia economics  
 - Guides, scripts, and best practices for the community
 
-📘 You can find all **Celestia-related services**, as well as **security** and **monitoring guides**, in the main documentation:  
+📘 Installation, upgrades, data-availability nodes, security and monitoring guides live in the main documentation:  
 👉 [https://skyneticlabs.gitbook.io/docs/](https://skyneticlabs.gitbook.io/docs/)  
 
 ---
@@ -115,4 +99,5 @@ To ensure a secure and resilient Celestia validator environment, we recommend fo
   <sub><i>Empowering modular blockchain infrastructure with transparency and open access.</i></sub>
 </p>
 
-<p align="center"> <a href="README.md">← Back to main portal</a> </p> 
+<p align="center"> <a href="README.md">← Back to main portal</a> </p>
+
