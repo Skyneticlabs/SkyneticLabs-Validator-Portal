@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/astrosynx/Logo/main/monad.png" width="30" align="center"> &nbsp; Monad Validator Portal
+# <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/monad.png" width="56" align="absmiddle"> Monad Validator Portal
 
 ---
 
