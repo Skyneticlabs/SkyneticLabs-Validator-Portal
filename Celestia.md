@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/celestia-logo.png" width="30" align="center"> &nbsp; Celestia Network
+# <img src="https://raw.githubusercontent.com/Skyneticlabs/Logo/main/celestia-logo.png" width="56" align="absmiddle"> Celestia Network
 
 Welcome to the **Celestia Validator Portal** — your access point for SkyneticLabs' validator, analytics and open data for the Celestia ecosystem.  
 Celestia is our **home network**: it's where we built our first public dashboard and API.
@@ -7,9 +7,8 @@ Celestia is our **home network**: it's where we built our first public dashboard
 
 ## Our Validator
 
-| | |
-|---|---|
 | **Network** | Celestia Testnet (Mocha) |
+|---|---|
 | **Operator address** | `celestiavaloper1uqnlzylk0uld4azf2n0awclxxtllmr7d0xrj3m` |
 | **Explorer** | [View validator ↗](https://celestia-dashboard.krews.xyz/celestia-mocha/validators/celestiavaloper1uqnlzylk0uld4azf2n0awclxxtllmr7d0xrj3m) |
 | **Hardware** | Own bare metal in Buenos Aires · remote signer + sentry nodes |
@@ -100,4 +99,3 @@ To ensure a secure and resilient Celestia validator environment, we recommend fo
 </p>
 
 <p align="center"> <a href="README.md">← Back to main portal</a> </p>
-
