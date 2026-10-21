@@ -2,6 +2,15 @@
 
 ---
 
+## Our Validator
+
+| **Network** | Monad Testnet |
+|---|---|
+| **Validator** | `0x034799aeb98c40f05cfb068aa5ed17e72646932dce1c567aef43ee9873265a204e` |
+| **Explorer** | [View validator ↗](https://testnet.monad-watchtower.xyz/validator/0x034799aeb98c40f05cfb068aa5ed17e72646932dce1c567aef43ee9873265a204e) |
+| **Hardware** | Own bare metal in Buenos Aires · 24/7 monitoring and alerting |
+---
+
 ## 📚 Documentation & Learning
 
 Explore SkyneticLabs resources for Monad:
