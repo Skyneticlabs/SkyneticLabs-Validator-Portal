@@ -9,6 +9,22 @@
 | **Validator** | `0x034799aeb98c40f05cfb068aa5ed17e72646932dce1c567aef43ee9873265a204e` |
 | **Explorer** | [View validator ↗](https://testnet.monad-watchtower.xyz/validator/0x034799aeb98c40f05cfb068aa5ed17e72646932dce1c567aef43ee9873265a204e) |
 | **Hardware** | Own bare metal in Buenos Aires · 24/7 monitoring and alerting |
+
+---
+
+## 🟪 Monad Economics Terminal
+
+**[skyneticlabs.com/monad](https://skyneticlabs.com/monad)** — what a transaction actually costs on Monad right now, how full blocks are, and who is securing the network. Refreshed every 15 minutes from our own RPC collectors.
+
+- **Headline stats** — MON price, throughput, active validators, block time, cost of a plain MON transfer
+- **Block headroom** — average block load as a share of gas capacity
+- **Fee predictability** — base fee, priority fee (p50) and total gas price at p50 / p90
+- **Stake distribution** — top 5 / 10 / 25 share of bonded stake, commission distribution
+- **Top validators** — ranked by stake, with commission and status
+- **Trends** — transactions per block, block load, base and priority fee over the last day
+
+Built for MON holders choosing a validator, builders estimating user transaction costs, and anyone assessing stake concentration.
+
 ---
 
 ## 📚 Documentation & Learning
@@ -186,4 +202,6 @@ Official documentation: https://docs.monad.xyz/
 <p align="center">
   <i>Maintained by SkyneticLabs — validator operations & reliability</i>
 </p>
+
+
 
