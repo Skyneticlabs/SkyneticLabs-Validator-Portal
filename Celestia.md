@@ -15,6 +15,24 @@ Celestia is our **home network**: it's where we built our first public dashboard
 
 ---
 
+## Node Software
+
+The badges always show the latest release on GitHub.
+
+| Component | Mainnet Beta (`celestia`) | Mocha Testnet (`mocha-5`) |
+|---|---|---|
+| **celestia-app** (consensus) | [![app](https://img.shields.io/github/v/release/celestiaorg/celestia-app?label=&color=7B2BF9)](https://github.com/celestiaorg/celestia-app/releases/latest) | [![app mocha](https://img.shields.io/github/v/release/celestiaorg/celestia-app?include_prereleases&filter=*-mocha&label=&color=7B2BF9)](https://github.com/celestiaorg/celestia-app/releases) |
+| **celestia-node** (bridge / light) | [![node](https://img.shields.io/github/v/release/celestiaorg/celestia-node?label=&color=7B2BF9)](https://github.com/celestiaorg/celestia-node/releases/latest) | [![node mocha](https://img.shields.io/github/v/release/celestiaorg/celestia-node?include_prereleases&filter=*-mocha&label=&color=7B2BF9)](https://github.com/celestiaorg/celestia-node/releases) |
+
+**Release notes for operators (November 2026)**
+
+- **celestia-app v10.6.0** is a minor update for nodes already on app version 10, with no coordinated upgrade. It brings celestia-core v0.42.8 (consensus, p2p, mempool and RPC fixes) and Fibre fixes. Validators should upgrade the Fibre server together with the node. Source builds now need **Go 1.26.10**.
+- **celestia-node v0.35.0** (on Mocha first) removes Bitswap, so shrex is the only share exchange protocol, and adds JWT token revocation. It is compatible with v0.34.x peers. After upgrading, run `celestia bridge config-update` (or `light`) before starting the node to drop the removed config keys.
+
+📘 Step-by-step upgrade guides: [skyneticlabs.gitbook.io/docs](https://skyneticlabs.gitbook.io/docs/)
+
+---
+
 ## Celestia Economic Dashboard
 
 🟣 **[skyneticlabs.com/celestia](https://skyneticlabs.com/celestia)** — a lightweight analytics product for monitoring network load, transaction economics and fee efficiency.
@@ -99,3 +117,4 @@ To ensure a secure and resilient Celestia validator environment, we recommend fo
 </p>
 
 <p align="center"> <a href="README.md">← Back to main portal</a> </p>
+
