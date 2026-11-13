@@ -12,6 +12,24 @@
 
 ---
 
+## Node Software
+
+| Component | Latest release |
+|---|---|
+| **monad-bft** (consensus) | [![monad-bft](https://img.shields.io/github/v/release/category-labs/monad-bft?label=&color=836EF9)](https://github.com/category-labs/monad-bft/releases/latest) |
+| **monad** (execution) | [![monad](https://img.shields.io/github/v/tag/category-labs/monad?label=&color=836EF9)](https://github.com/category-labs/monad/tags) |
+
+> ⚠️ A release on GitHub is not an instruction to upgrade. Monad announces each mainnet and testnet upgrade through official channels. We upgrade only after that announcement and follow the [official upgrade instructions](https://docs.monad.xyz/node-ops/upgrade-instructions/index), with the checklist below.
+
+**v0.16.6 (October 2026) at a glance**
+
+- Debian packages for the node
+- Metrics export over both Prometheus and OTLP
+- State sync protocol v3 with page-encoded storage
+- `monad-mpt --upgrade` and `--repair` removed: check your runbooks before upgrading
+
+---
+
 ## 🟪 Monad Economics Terminal
 
 **[skyneticlabs.com/monad](https://skyneticlabs.com/monad)** — what a transaction actually costs on Monad right now, how full blocks are, and who is securing the network. Refreshed every 15 minutes from our own RPC collectors.
@@ -202,6 +220,5 @@ Official documentation: https://docs.monad.xyz/
 <p align="center">
   <i>Maintained by SkyneticLabs — validator operations & reliability</i>
 </p>
-
 
 
